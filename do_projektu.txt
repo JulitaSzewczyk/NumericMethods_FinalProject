@@ -1,0 +1,15 @@
+Tutaj info z rzeczami do projektu typu opis skrótów czy nasze "Obserwacje" ¯\_(ツ)_/¯
+
+----- Skróty oznaczeń w datasecie z jednej stacji -----
+To better understand the data, here is a brief explanation of some common columns you might encounter in Meteostat datasets:
+
+tavg: Average temperature (°C)
+tmin: Minimum temperature (°C)
+tmax: Maximum temperature (°C)
+prcp: Precipitation (mm)
+snow: Snowfall (mm)
+wdir: Wind direction (degrees)
+wspd: Wind speed (m/s)
+wpgt: Wind gust speed (m/s)
+pres: Atmospheric pressure (hPa)
+tsun: Sunshine duration (minutes)
