@@ -13,3 +13,36 @@ wspd: Wind speed (m/s)
 wpgt: Wind gust speed (m/s)
 pres: Atmospheric pressure (hPa)
 tsun: Sunshine duration (minutes)
+
+
+---Analiza danych do map---
+
+Porównanano dane dla pierwszego dnia każdego miesiąca i przedstawiono je w sposób graficzny na mapach.
+Jak widać dla pierwszego porównania dla wartości opadów dla Gdańska wartość aproksymowana znacznie odbiega od wartości modelowej.
+Może to byc spowodowane znaczną rozbieżnością wartości pomiędzy poszczególnymi dniami oraz efektem Rungego.
+Dla pozostałych miast dane aproksymowane są zbliżone do wartości modelowych.
+
+Na kolejnej mapie nie widać żadnych anomalii, a wartości aproksymowane w dobrym stopniu odzwieciedlają wartości modelowe.
+
+Mapa dla 01.03.2024 nie zawiera żadnych anomalii, jednak wartości aproksymowane bardziej odbiegają od modelowych.
+
+
+---Analiza wykresów interpolacji---
+
+W prezentacji zamieszczono wykresy interpolacji dla wszytkich miast, jednak w celu analizy posłużę się wykresem dla Krakowa.
+Pomarańczową linią na wykresie narysowano wartości modelowe, niebieską linią wartości interpolowane,
+linia fioletowa to różnica pomiędzy wartością modelową a interpolowaną, dlatego duże wzniosy będą świadczyć o efekcie rungego.
+Najlepiej efekt Rungego widać dla opadów, często wtystępują anomalie pomiędzy wartościami interpolowanymi a modelowymi.
+Głównym powodem jest duża rozbieżność danych wynikająca z charakterystyki, wartość opadów jes rozbieżna od 0 do nawet 20, bez żadnej regularności.
+Z tego powodu funkcja opisująca dane znacznie odbiega od funkcji gładkiej, co sprzyja wystpępowaniu efektu Rungego.
+Ciekawą zależność możemy zuważyć dla ciśnienia, dane interpolowane praktycznie pokrywają się z danymi modelowymi, a efekt Rungego nie występuje.
+Jest to spowodowane niedużymi róznicami pomiędzy warościami, gdyż podane są one w hPa. Z tego względu funkcja opisująca te dane jest bardzo zbliżona
+do funkcji gładkiej. Funkcja opisująca ciśnienie ma przeciwne wartości do funkcji opisującej opady.
+Dla temperatury i prędkości wiartu możemy zauważyć pojedyńcze wystąpienia efektu Rungego, jednak nie w takim stopniu i nie takiej częstotliwości jak 
+dla opadów.
+
+---Analiza wykresów błędów bezwzględnych---
+Przedstawiono wykresy błędów bezwzględnych dla wszystkich miast, tak aby zawrzeć każdy parametr.
+Można zauwazyć, że błędy nie są równo rozdystrybowane. W większości przypadków błędy nie są relatywnie duże
+w porównaniu do zestawu danych. Czasmi występują anomalie, w których wykres wznosi się gwałtownie w górę.
+Znaczy to, że w tych miejscach aproksymacja nie wychwyciła znaczącej zmiany w wartości danych w porównaniu do danych modelowych.
